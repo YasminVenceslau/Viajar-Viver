@@ -1,0 +1,58 @@
+
+/* font-family: 'Playwrite BE VLG', serif;
+} */
+
+.primero{
+    color: #1FBFBF;
+}
+
+.fundo{
+    background-color: #1FBFBF;
+    color: aliceblue;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #FFE5D4;
+   
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+
+
+header ul{
+    display: flex;
+    
+}
+
+ li{
+    list-style: none;
+    padding:0 20px;
+}
+header img{
+    width: 100px;
+}
+
+/* Ofertas */
+
+.container h2{
+   
+    font-family: 'Cinzel', serif;
+}
+/* Mais procurados */
+
+#texto{
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#texto h3{
+  font-family: 'Playwrite BE VLG', serif ;
+}
+
+#texto img{
+    width: 230px;
+}
