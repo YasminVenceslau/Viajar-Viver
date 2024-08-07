@@ -16,11 +16,11 @@
         <nav class="navbar navbar-expand-lg " id="cacebaca1">
             <div class="container-fluid ">
                 <img src="imagens/v&V.png" alt="">
-                <button  class="w-100 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarconteu" aria-expanded="false" aria-label="Toggle navigation" >
+                <button  class="img-fluid navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarconteu" aria-expanded="false" aria-label="Toggle navigation" >
                     <span class="bi bi-airplane-engines"></span>
                 </button>
                 <div class="collapse navbar-collapse "  id="navbarconteu">
-                    <ul class=" navabar-nav nav-pills me-auto mb-2 mb-lg-0">
+                    <ul class=" navabar-nav nav-pills me-auto mb-2 mb-lg-0" id="navConteudoPrincipal">
                         <li class="nav-item">
                             <a href="#Ofertas" class="nav-link active " aria-current="page">Ofertas</a>
                         </li>
@@ -47,7 +47,7 @@
                     
                     <form class="d-flex" role="search">
                         <div class="input-group " >
-                            <input type="text" class="form-control" placeholder="Procure seu destino" aria-label="Input group example" aria-describedby="btnGroupo1">
+                            <input type="text" class="btn btn-light" placeholder="Procure seu destino" aria-label="Input group example" aria-describedby="btnGroupo1">
                             <button type="button" class=" btn btn-outline-info input-group-text" id="btnGroupo2"><i class="bi bi-search"></i></button>
                         </div>
                     </form>
@@ -62,13 +62,13 @@
         <div  id="carousel1" data-bs-ride="carousel" class="carousel carousel-dark slide"> <!-- carrosel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="imagens/1.png" alt="">
+                    <img class="w-100 img-fluid" src="imagens/1.png" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="imagens/2.png" alt="">
+                    <img class="w-100 img-fluid" src="imagens/2.png" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="imagens/3.png" alt="">
+                    <img class="w-100 img-fluid" src="imagens/3.png" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev" >
@@ -81,60 +81,64 @@
             </button>
         </div>
 
-        <div class="container " > 
+        <div class="container  " > 
             <section id="Ofertas" class="mt-5 mb-5  "> <!-- Ofertas -->
                 <h2 class="text-center  mb-4">Ofertas</h2>
                 <div class="row ">
-                    <div class="col-5 ">
-                        <img class="d-block w-100 rounded" src="imagens/oferta2.png" alt="">
+                    <div class="col-md-12 col-lg-6">
+                        <img class="d-block img-fluid rounded" src="imagens/oferta2.png" alt=""> <!-- img principal -->
                     </div>
-                    <div class="col-7" > 
+                    <div class="col-md-12  col-lg-6" > 
                         <div class="row m-4">
-                        <div class="col-4">
-                            <img class="w-100  rounded d-block " src="imagens/porto.png" alt="">
-                        </div>
-                        <div class="col-8  ">
-                            <ul>
-                                <li>
-                                    <h3>Por que ir para Porto ?</h3> 
-                                </li>
-                                <li>
-                                    <p>Porto Seguro é conhecida por suas praias de águas claras, festas animadas e história rica</p> 
-                                </li>
-                                <li>
-                                    <button class="btn btn-info col-8" type="button"> Apartir de R$ 1.500</button>
-                                </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="row">
-                            <ul class="col-7 ">
-                                <li  >
-                                    <h3 >Por que ir para Pipa?</h3>
-                                </li>
-                                <li>
-                                    <p>Um destino charmoso com praias paradisíacas e vida noturna vibrante.</p>
-                                </li>
-                                <li>
-                                    <button class="btn btn-info col-8" type="button"> Apartir de R$ 1.200</button>
-                                </li>
-                            </ul>
-                            <div class="col-4">
-                                <img class="w-100 rounded" src="imagens/pipa.png" alt="">
+                            <div class="row">
+                                <div class="row mb-5"> <!-- porto -->
+                                    
+                                    <div class="col-md-4 col-12">
+                                        <img class="img-fluid  rounded d-block " src="imagens/porto.png" alt=""> <!-- porto -->
+                                    </div>
+                                    <ul class="col-md-7 mt-3 col-12 ">
+                                        <li  >
+                                            <h3 >Por que ir para Porto?</h3>
+                                        </li>
+                                        <li>
+                                            <p>Porto Seguro é conhecida por suas praias de águas claras.</p>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-info col-md-8" type="button"> Apartir de R$ 1.200</button>
+                                        </li>
+                                    </ul>
+                                </div> <!-- row porto -->
+                                
+                            
                             </div>
-                        </div>
-                        
-                    </div>
+                            <div class="row"> <!-- pipa -->
+                                <ul class="col-md-7  col-12 ">
+                                    <li  >
+                                        <h3 >Por que ir para Pipa?</h3>
+                                    </li>
+                                    <li>
+                                        <p>Um destino charmoso com praias paradisíacas e vida noturna vibrante.</p>
+                                    </li>
+                                    <li>
+                                        <button class="btn btn-info col-md-8" type="button"> Apartir de R$ 1.200</button>
+                                    </li>
+                                </ul>
+                                <div class="col-md-4 col-12" >
+                                    <img class="img-fluid rounded" src="imagens/pipa.png" alt="">
+                                </div>
+                            </div> <!-- row pipa -->
+                        </div><!-- row -->
+                    </div> <!-- col md12 -->
                 </div>
             </section>
             
             
-                <img class="w-100 mt-5 mb-5" src="imagens/meio.png" alt=""> <!-- explore seu destino -->
+                <img class="img-fluid mt-5 mb-5" id="imgmeio" src="imagens/meio.png" alt=""> <!-- explore seu destino -->
             
             <div id="maispPro"> <!-- mais procurados -->
                 <div class="row ">
                     <h2 class="text-center mt-4">Mais Procurados</h2>
-                    <div class="col-3 mt-4 ">
+                    <div class="col-md-3 mt-4 ">
                         <div id="list-example" class="list-group ">
                             <a href="#list-it1" class="list-group-item list-group-action">Maldivas</a>
                             <a href="#list-it2" class="list-group-item list-group-action">Bora Bora, Polinésia Francesa</a>
@@ -145,12 +149,12 @@
                             <a href="#list-it7" class="list-group-item list-group-action">Bonito, MS</a>
                         </div>
                     </div>
-                    <div class="col-9 mt-4 " > <!-- conteudo procurado -->
+                    <div class="col-md-9 mt-4 " > <!-- conteudo procurado -->
                         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-lista"  tabindex="0" id="texto" tarbindex="0">
                             <div class="row">
                                 <h3 class=" mb-3" id="list-it1" >Maldivas</h3>
                                 <img class="mt-2"  src="imagens/maldivas.png" alt="">
-                                <div class="col-7 ">
+                                <div class="col-md-7  ">
                                     <p>Famosas por suas águas cristalinas, bangalôs sobre a água e recifes de coral.</p>
                                     <p>Mergulho, snorkeling, passeios de barco, e relaxar nas praias de areia branca.</p>
                                     <p>É um destino de luxo que atrai casais em lua de mel </p>
@@ -161,7 +165,7 @@
                             <div class="row mt-4">
                                 <h3 class="mt-5 mb-4"  id="list-it2" >Bora Bora, Polinésia Francesa</h3>
                                 <img class="mt-2"  src="imagens/bora.png" alt="">
-                                <div class="col-7">
+                                <div class="col-md-7 ">
                                     <p>Conhecida por seus resorts luxuosos e a incrível lagoa azul-turquesa.</p>
                                     <p> Passeios de barco, mergulho com tubarões, e explorar o Monte Otemanu.</p>
                                     <p>Destino icônico para casais em busca de romance e tranquilidade.</p>
@@ -172,7 +176,7 @@
                             <div class="row mt-4">
                                 <h3 class="mt-5 mb-4" id="list-it3" >Rio de Janeiro, RJ</h3>
                                 <img class="mt-2"  src="imagens/rio.png" alt="">
-                                <div class="col-7">
+                                <div class="col-md-7 ">
                                     <p>Conhecida como a "Cidade Maravilhosa"</p>
                                     <p> o Rio de Janeiro oferece uma combinação única de praias.</p>
                                     <p> Visitar o Cristo Redentor, passear pelo Pão de Açúcar, 
@@ -186,7 +190,7 @@
                             <div class="row mt-4">
                                 <h3 class="mt-5 mb-3" id="list-it4" >Foz do Iguaçu, PR</h3>
                                 <img class="mt-2"  src="imagens/foz.png" alt="">
-                                <div class="col-7">
+                                <div class="col-md-7 ">
                                     <p>Lar das espetaculares Cataratas do Iguaçu, uma das maiores e mais impressionantes quedas d'água do mundo.</p>
                                     <p> Explorar o Parque Nacional do Iguaçu, fazer passeios de barco nas cataratas, visitar o Parque das Aves, e conhecer a Usina Hidrelétrica de Itaipu.
                                     </p>
@@ -197,10 +201,10 @@
                             <div class="row mt-4">
                                 <h3 class="mt-5 mb-3" id="list-it5" >Gramado, RS</h3>
                                 <img class="mt-2"  src="imagens/gramado.png" alt="">
-                                <div class="col-7">
+                                <div class="col-md-7 ">
                                     <p>Um destino charmoso na Serra Gaúcha, conhecido por sua arquitetura europeia </p>
                                     <p>gastronomia deliciosa e festivais de inverno.</p>
-                                    <p> Visitar o Mini Mundo, explorar o Lago Negro, conhecer as vinícolas da região, e participar do Natal Luz.
+                                    <p> Visitar o Mini Mundo, explorar o Lago Negro, conhecer as vinícol-mdas da região, e participar do Natal Luz.
                                     </p>
                                    
                                 <div class="row mt-2"><button class="text-center  btn btn-info" type="button">Saiba mais</button></div>
@@ -208,7 +212,7 @@
                             <div class="row mt-4">
                                 <h3 class="mt-4 mb-3" id="list-it6" > Salvador, Ba</h3>
                                 <img class="mt-2"  src="imagens/salvador.png" alt="">
-                                <div class="col-7">
+                                <div class="col-md-7 ">
                                     <p>Salvador é a capital da cultura afro-brasileira, com um centro histórico vibrante, praias deslumbrantes e uma rica tradição musical.</p>
                                     <p> Explorar o Pelourinho, visitar o Elevador Lacerda, relaxar na Praia do Farol da Barra, e curtir o Carnaval de Salvador.
                                         <div class="row mt-2"><button class="text-center  btn btn-info" type="button">Saiba mais</button></div>
@@ -220,7 +224,7 @@
                             <div class="row mt-4">
                                 <h3 class="mt-4 mb-3" id="list-it7" >  Bonito, MS</h3>
                                 <img class="mt-2 mb-3"  src="imagens/bonito.png" alt="">
-                                <div class="col-7 mb-3">
+                                <div class="col-md-7  mb-3">
                                     <p>Conhecido por suas águas cristalinas, cavernas e rica biodiversidade.</p>
                                     <p>Bonito é um dos principais destinos de ecoturismo no Brasil.</p>
                                     <p> Fazer flutuação nos rios de águas cristalinas, explorar a Gruta do Lago Azul, e visitar a Estância Mimosa.
@@ -242,12 +246,20 @@
             <div id="destino"> <!-- destino -->
                 <h2 class="text-center mt-5  mb-4">Destinos</h2>
                 <div class="row mt-5 ">
-                    <div class="col-10 ">
+                    <div class="col-md-2 mb-4">
+                        <div class="list-group flex-column" id="nav-destino" role="tablist">
+                            <button class="list-group-item active" id="nav-paraia-tab" data-bs-toggle="tab" data-bs-target="#nav-praia" > Praia</button>
+                            <button class="list-group-item " id="nav-montanha-tab" data-bs-toggle="tab" data-bs-target="#nav-montanha" type="button" > Montanha</button>
+                            <button class="list-group-item " id="nav-serra-tab" data-bs-toggle="tab" data-bs-target="#nav-serra"  > Parques de Diversão</button>
+                            
+                        </div>
+                    </div><!-- col2.row.destino -->
+                    <div class="col-md-10 ">
                         <div class="tab-content" id="nav-content">
                             <div class="tab-pane fade show active " id="nav-praia"  > <!-- praia -->
                                 <div class="row">
                                    
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/praia 1.jpg" class="" alt="...">
                                             <div class="card-body">
@@ -260,7 +272,7 @@
                                         
                                           </div> <!-- card -->
                                     </div> <!-- col card -->
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/praia 2.jpg" class="" alt="...">
                                             <div class="card-body">
@@ -274,7 +286,7 @@
                                           </div> <!-- card -->
                                     </div> <!-- col card -->
 
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/praia 3.jpg" class="" alt="...">
                                             <div class="card-body">
@@ -298,7 +310,7 @@
                             <div class="tab-pane fade show " id="nav-montanha"  > <!-- montanha -->
                                 <div class="row">
                                     
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/campo.png " class="" alt="...">
                                             <div class="card-body">
@@ -311,7 +323,7 @@
                                         
                                         </div> <!-- card -->
                                     </div> <!-- col card -->
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/chapa.png" class="" alt="...">
                                             <div class="card-body">
@@ -325,7 +337,7 @@
                                         </div> <!-- card -->
                                     </div> <!-- col card -->
 
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/gon.png" class="" alt="...">
                                             <div class="card-body">
@@ -344,7 +356,7 @@
                             <div class="tab-pane fade show  " id="nav-serra"  > <!-- parque -->
                                 <div class="row">
                                     
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/beto.png " class="" alt="...">
                                             <div class="card-body">
@@ -357,7 +369,7 @@
                                         
                                         </div> <!-- card -->
                                     </div> <!-- col card -->
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/hopi.png" class="" alt="...">
                                             <div class="card-body">
@@ -371,7 +383,7 @@
                                         </div> <!-- card -->
                                     </div> <!-- col card -->
 
-                                    <div class="col-4">
+                                    <div class="col-md-4">
                                         <div class="card" style="">
                                             <img src="imagens/therma.png" class="" alt="...">
                                             <div class="card-body">
@@ -390,14 +402,7 @@
                             
                         </div>
                     </div><!-- col1.row.destino -->
-                    <div class="col-2">
-                        <div class="list-group flex-column" id="nav-destino" role="tablist">
-                            <button class="list-group-item active" id="nav-paraia-tab" data-bs-toggle="tab" data-bs-target="#nav-praia" > Praia</button>
-                            <button class="list-group-item " id="nav-montanha-tab" data-bs-toggle="tab" data-bs-target="#nav-montanha" type="button" > Montanha</button>
-                            <button class="list-group-item " id="nav-serra-tab" data-bs-toggle="tab" data-bs-target="#nav-serra"  > Parques de Diversão</button>
-                            
-                        </div>
-                    </div><!-- col2.row.destino -->
+                    
 
                     
 
@@ -409,17 +414,17 @@
     </main><!-- finnal -->
 
 
-    <footer class="mt-5 pt-3">
+    <footer class="mt-5 pb-2 pt-3">
         <div class="container ">
             
             <div class="row">
                 
-                <div class="col-4">
-                    <a  href="#carousel1"><img class="w-100 rounded d-block" src="imagens/viaje.png" alt=""></a>
+                <div class="col-md-4">
+                    <a  href="#carousel1"><img class="img-fluid rounded  img-fluid" src="imagens/viaje.png" alt=""></a>
                                     </div>
-                <div class="col-4">
+                <div class="col-md-5">
                     <form class="" id="falConos">
-                        <h2 class="text-center" >Fale conosco</h2>
+                        <h2 class="text-center mt-2" >Fale conosco</h2>
                         <div class="row ">
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="bi bi-person"></i></span>
@@ -444,19 +449,22 @@
                     </form>
                 </div>
 
-                <div class="col-4">
-                    <h2>Nossas Redes</h2>
-                    <div class="redes">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-youtube"></i></a>
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                <div class="col-md-3">
+                    <h2 class="text-center">Nossas Redes</h2>
+                    <div class="redes text-center">
+                        <a href="#"><i class=" bi bi-facebook"></i></a>
+                        <a href="#"><i class=" bi bi-instagram"></i></a>
+                        <a href="#"><i class=" bi bi-youtube"></i></a>
+                        <a href="#"><i class=" bi bi-twitter-x"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    
+    <div class="foot">
+        <p>  <a href="https://github.com/YasminVenceslau" target="_blank" title="Conheça o meu GitHub"> <i class="bi bi-github"></i> Yasmin Venceslau</a>   ©  Todos os direitos reservados - 2024</p>
+    </div>
 
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script >  
