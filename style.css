@@ -2,22 +2,34 @@
 /* font-family: 'Playwrite BE VLG', serif;
 } */
 
+
+
+.btn-info{
+    background-color: #1FBFBF;
+    border-color: #1FBFBF;
+    color: white;
+}
+
 .primero{
     color: #1FBFBF;
 }
 
-.fundo{
+.fundo,
+.dropdown-item.active, .dropdown-item:active
+{
     background-color: #1FBFBF;
     color: aliceblue;
 }
 
+
 /* Cabeçalho */
 
 header {
-    background-color: #FFE5D4;
+    background-color: #c7dee0;
    
     font-family: "Cinzel", serif;
     font-weight: bold;
+    
 }
 
 
@@ -34,6 +46,18 @@ header img{
     width: 100px;
 }
 
+/* cabeçaçho nav */
+header .nav-pills .nav-link.active{
+    background-color: #1FBFBF;
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+
+
 /* Ofertas */
 
 .container h2{
@@ -44,9 +68,14 @@ header img{
 
 #texto{
     width: 100%;
-    height: 300px;
-    overflow-y: scroll;
+    height: 280px;
+    overflow-y: hidden;
     overflow-x: hidden;
+}
+
+#texto .scrollspy-lista .row,
+#texto .scrollspy-lista .row .mt-4{
+    margin: 3.5em 0;
 }
 
 #texto h3{
@@ -54,5 +83,37 @@ header img{
 }
 
 #texto img{
-    width: 230px;
+    width: 210px;
+}
+
+.list-group-item.active{
+    background-color: #1FBFBF;
+    border-color: #1FBFBF;
+    color: white;
+}
+
+/* destino */
+
+#destino h5 {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    background-color:#c7dee0;
+    margin: 0;
+    
+}
+
+textarea{
+    
+    resize: none;
+}
+
+.redes, .redes a {
+    font-size: 50px;
+    color: black;
 }
